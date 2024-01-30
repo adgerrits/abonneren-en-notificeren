@@ -1,0 +1,5 @@
+<archimate:BusinessRole
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Afnemer"
+    id="id-190e570b02964b47a48eb5e2b09678b4"
+    documentation="Rol van een organisatie die notificaties over plaatsgevonden gebeurtenissen ontvangt"/>

@@ -1,0 +1,5 @@
+<archimate:ApplicationComponent
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Intermediair applicatie"
+    id="id-85e48f416e174734a42c4c7355e4c969"
+    documentation="Applicatie die op basis van infomatie over plaatsgevonden gebeurtenissen notificaties verstrekt aan afnemer-applicaties"/>

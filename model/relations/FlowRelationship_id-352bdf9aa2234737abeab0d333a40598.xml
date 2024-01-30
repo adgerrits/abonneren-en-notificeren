@@ -1,0 +1,13 @@
+<archimate:FlowRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Notificatie"
+    id="id-352bdf9aa2234737abeab0d333a40598"
+    documentation="Gegevens over een plaatsgevonden gebeurtenis">
+  <source
+      xsi:type="archimate:ApplicationComponent"
+      href="ApplicationComponent_id-85e48f416e174734a42c4c7355e4c969.xml#id-85e48f416e174734a42c4c7355e4c969"/>
+  <target
+      xsi:type="archimate:ApplicationComponent"
+      href="ApplicationComponent_id-d009aef82f564e8488a457f5f3720b3a.xml#id-d009aef82f564e8488a457f5f3720b3a"/>
+</archimate:FlowRelationship>

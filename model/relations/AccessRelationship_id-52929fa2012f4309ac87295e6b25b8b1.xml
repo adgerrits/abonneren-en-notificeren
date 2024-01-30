@@ -1,0 +1,13 @@
+<archimate:AccessRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Abonnement gegevens"
+    id="id-52929fa2012f4309ac87295e6b25b8b1"
+    documentation="Geautomatiseerd bijwerken van abonnementgegevens ten behoeve van naar wens notificeren">
+  <source
+      xsi:type="archimate:ApplicationComponent"
+      href="ApplicationComponent_id-d009aef82f564e8488a457f5f3720b3a.xml#id-d009aef82f564e8488a457f5f3720b3a"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_id-5888157b68da4078b6e010038ea6e6dc.xml#id-5888157b68da4078b6e010038ea6e6dc"/>
+</archimate:AccessRelationship>
