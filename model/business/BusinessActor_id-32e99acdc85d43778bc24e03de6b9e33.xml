@@ -1,4 +1,5 @@
 <archimate:BusinessActor
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Organisatie (onderdeel)"
-    id="id-32e99acdc85d43778bc24e03de6b9e33"/>
+    id="id-32e99acdc85d43778bc24e03de6b9e33"
+    documentation="Organisatie die in een bepaalde rol is betrokken bij geautomatiseerd notificeren"/>

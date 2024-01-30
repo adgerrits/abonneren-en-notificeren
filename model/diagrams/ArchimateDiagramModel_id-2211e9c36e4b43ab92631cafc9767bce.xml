@@ -1,0 +1,17 @@
+<archimate:ArchimateDiagramModel
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="50-PubSub-patroon1"
+    id="id-2211e9c36e4b43ab92631cafc9767bce">
+  <children
+      xsi:type="archimate:DiagramModelNote"
+      id="id-340f9b9b184f4abeb2be534dc0431988"
+      textAlignment="1"
+      content="todo">
+    <bounds
+        x="56"
+        y="79"
+        width="185"
+        height="80"/>
+  </children>
+</archimate:ArchimateDiagramModel>

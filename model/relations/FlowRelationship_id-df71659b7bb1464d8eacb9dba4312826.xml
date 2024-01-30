@@ -1,7 +1,7 @@
 <archimate:FlowRelationship
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:archimate="http://www.archimatetool.com/archimate"
-    name="Gebeurtenisgegevrens"
+    name="Gebeurtenis gegevrens"
     id="id-df71659b7bb1464d8eacb9dba4312826"
     documentation="Gegevens over een plaatsgevonden gebeurtenis met als doel het daarover notificeren van afnemers">
   <source
