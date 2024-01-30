@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>abonneren-en-notificeren</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>abonneren-en-notificeren</b>
+
+            <!-- If a View with Viewpoint -->
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+                       <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-purpose"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+						<li role="presentation"><a href="#query" aria-controls="query" role="tab" data-toggle="tab" class="i18n-query"></a></li>
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap"></div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+						<div role="tabpanel" class="tab-pane" id="query">
+						<br>
+						<style>
+						#myprompt {
+						    width: 80%;
+						    font-family: Consolas,Monaco, monospace;
+						}
+						</style>
+
+						<div id='myconsole'></div>
+
+						<p>
+							<tt><span id="useid">alasql</span> &gt;</tt> <input id='myprompt' autofocus/> 
+						</p>
+
+						<script src='../../lib/alasql/alasql.min.js'></script>
+
+						<script>
+							function decodeURL(s) {
+								return decodeURIComponent(s.replace(/\+/g, "%20"));
+							}
+
+							var first = decodeURI(location.search.substr(1));
+						 	alasql.options.logtarget = 'myconsole';
+							alasql.prompt('myprompt','useid');
+							alasql.prompt('myprompt','useid', first);
+
+							var dataElements = [ ];	  
+						  	var dataProperties = [ ];
+						 	var dataRelationships = [ ];
+						 	var dataViews = [ ];
+						 	var dataViewsContent = [ ];
+						 	var dataFolders = [ ];
+						 	var dataFoldersContent = [ ];
+
+							dataFolders.push({id:"id-45568690bf3444b482e57f8b2da36e0d", type:"ArchimateModel", name:decodeURL("abonneren-en-notificeren"), documentation:decodeURL("")});
+								dataFoldersContent.push({folderid:"id-45568690bf3444b482e57f8b2da36e0d", contentid:"id-7d0489b28aa542359a59fe1df63c1749", contenttype:"Folder"});
+								dataFolders.push({id:"id-7d0489b28aa542359a59fe1df63c1749", type:"Folder", name:decodeURL("Strategy"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-45568690bf3444b482e57f8b2da36e0d", contentid:"id-f0b7236548e64f70839ed1f8072060db", contenttype:"Folder"});
+								dataFolders.push({id:"id-f0b7236548e64f70839ed1f8072060db", type:"Folder", name:decodeURL("Business"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-f0b7236548e64f70839ed1f8072060db", contentid:"id-44bfdf7369c643aaad58cf9aa2b8760c", contenttype:"BusinessRole"});
+										dataElements.push({id:"id-44bfdf7369c643aaad58cf9aa2b8760c", type:"BusinessRole", specialization:decodeURL(""), name:decodeURL("Aanbieder"), documentation:decodeURL("Rol+van+een+organisatie+of+applicatie+die+infomatie+over+plaatsgevonden+gebeurtenissen+publiceert")});
+									dataFoldersContent.push({folderid:"id-f0b7236548e64f70839ed1f8072060db", contentid:"id-190e570b02964b47a48eb5e2b09678b4", contenttype:"BusinessRole"});
+										dataElements.push({id:"id-190e570b02964b47a48eb5e2b09678b4", type:"BusinessRole", specialization:decodeURL(""), name:decodeURL("Afnemer"), documentation:decodeURL("Rol+van+een+organisatie+die+notificaties+over+plaatsgevonden+gebeurtenissen+ontvangt")});
+									dataFoldersContent.push({folderid:"id-f0b7236548e64f70839ed1f8072060db", contentid:"id-0b2dbe72fbf54998a0544dd3114bc9c8", contenttype:"BusinessRole"});
+										dataElements.push({id:"id-0b2dbe72fbf54998a0544dd3114bc9c8", type:"BusinessRole", specialization:decodeURL(""), name:decodeURL("Intermediair"), documentation:decodeURL("Rol+van+een+organisatie+die+notificaties+over+plaatsgevonden+gebeurtenissen+aan+afnemers+verstrekt")});
+									dataFoldersContent.push({folderid:"id-f0b7236548e64f70839ed1f8072060db", contentid:"id-5750619b4b444fad8df447a720ce5f08", contenttype:"Contract"});
+										dataElements.push({id:"id-5750619b4b444fad8df447a720ce5f08", type:"Contract", specialization:decodeURL(""), name:decodeURL("Overeenkomst"), documentation:decodeURL("Overeenkomst+tussen+de+organisaties+in+de+rol+van+aanbieder%2C+intermediair+en+afnemer")});
+									dataFoldersContent.push({folderid:"id-f0b7236548e64f70839ed1f8072060db", contentid:"id-32e99acdc85d43778bc24e03de6b9e33", contenttype:"BusinessActor"});
+										dataElements.push({id:"id-32e99acdc85d43778bc24e03de6b9e33", type:"BusinessActor", specialization:decodeURL(""), name:decodeURL("Organisatie+%28onderdeel%29"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-45568690bf3444b482e57f8b2da36e0d", contentid:"id-49b31cfdb67d4e4da90e9b9d740a8f14", contenttype:"Folder"});
+								dataFolders.push({id:"id-49b31cfdb67d4e4da90e9b9d740a8f14", type:"Folder", name:decodeURL("Application"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-49b31cfdb67d4e4da90e9b9d740a8f14", contentid:"id-378b50d762cb47cd83297e08bbaf706c", contenttype:"ApplicationComponent"});
+										dataElements.push({id:"id-378b50d762cb47cd83297e08bbaf706c", type:"ApplicationComponent", specialization:decodeURL(""), name:decodeURL("Aanbieder+applicatie"), documentation:decodeURL("Applicatie+die+infomatie+over+plaatsgevonden+gebeurtenissen+verstrekt+aan+intermediair-applicatie")});
+									dataFoldersContent.push({folderid:"id-49b31cfdb67d4e4da90e9b9d740a8f14", contentid:"id-85e48f416e174734a42c4c7355e4c969", contenttype:"ApplicationComponent"});
+										dataElements.push({id:"id-85e48f416e174734a42c4c7355e4c969", type:"ApplicationComponent", specialization:decodeURL(""), name:decodeURL("Intermediair+applicatie"), documentation:decodeURL("Applicatie+die+op+basis+van+infomatie+over+plaatsgevonden+gebeurtenissen+notificaties+verstrekt+aan+afnemer-applicaties")});
+									dataFoldersContent.push({folderid:"id-49b31cfdb67d4e4da90e9b9d740a8f14", contentid:"id-d009aef82f564e8488a457f5f3720b3a", contenttype:"ApplicationComponent"});
+										dataElements.push({id:"id-d009aef82f564e8488a457f5f3720b3a", type:"ApplicationComponent", specialization:decodeURL(""), name:decodeURL("Afnemer+applicatie"), documentation:decodeURL("Applicatie+die+notificaties+ontvangt+over+plaatsgevonden+gebeurtenissen")});
+									dataFoldersContent.push({folderid:"id-49b31cfdb67d4e4da90e9b9d740a8f14", contentid:"id-5888157b68da4078b6e010038ea6e6dc", contenttype:"DataObject"});
+										dataElements.push({id:"id-5888157b68da4078b6e010038ea6e6dc", type:"DataObject", specialization:decodeURL(""), name:decodeURL("Abonnement"), documentation:decodeURL("Regisrtratie+met+abonnementsgegevens+per+afnemende+organisatie.%0D%0ADe+registratie+kan+handmatig+en%2Fof+geautomatiseerd+worden+bijgewerkt.%0D%0ADe+intermediair-applicatie+gebruikt+de+registratie+om+te+bepalen+welke+notificaties+moeten+worden+verstrekt+aan+een+afnemer.")});
+									dataFoldersContent.push({folderid:"id-49b31cfdb67d4e4da90e9b9d740a8f14", contentid:"id-f7df9c7b6f9d4c1e8a828afe1448a498", contenttype:"ApplicationCollaboration"});
+										dataElements.push({id:"id-f7df9c7b6f9d4c1e8a828afe1448a498", type:"ApplicationCollaboration", specialization:decodeURL(""), name:decodeURL("Aanbieder%2FIntermediair+samenwerking"), documentation:decodeURL("Samenwerking+tussen+aanbieder-+en+intermediair-applicatie+die+resulteert+in+verstrekken+van+notificaties+aan+afnemer-applicaties+")});
+
+								dataFoldersContent.push({folderid:"id-45568690bf3444b482e57f8b2da36e0d", contentid:"id-19d0ae8066c143dcbe6126829daf1bdb", contenttype:"Folder"});
+								dataFolders.push({id:"id-19d0ae8066c143dcbe6126829daf1bdb", type:"Folder", name:decodeURL("Technology+%26+Physical"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-45568690bf3444b482e57f8b2da36e0d", contentid:"id-75a746aa68b04d07a5b21e6f0cc68005", contenttype:"Folder"});
+								dataFolders.push({id:"id-75a746aa68b04d07a5b21e6f0cc68005", type:"Folder", name:decodeURL("Motivation"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-45568690bf3444b482e57f8b2da36e0d", contentid:"id-990ded046cc646739e1224a8879725b4", contenttype:"Folder"});
+								dataFolders.push({id:"id-990ded046cc646739e1224a8879725b4", type:"Folder", name:decodeURL("Implementation+%26+Migration"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-45568690bf3444b482e57f8b2da36e0d", contentid:"id-aa97c95f0b944cb886d5b9f142c9705b", contenttype:"Folder"});
+								dataFolders.push({id:"id-aa97c95f0b944cb886d5b9f142c9705b", type:"Folder", name:decodeURL("Other"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-45568690bf3444b482e57f8b2da36e0d", contentid:"id-12155bb594234a49ac8a37956b367baf", contenttype:"Folder"});
+								dataFolders.push({id:"id-12155bb594234a49ac8a37956b367baf", type:"Folder", name:decodeURL("Relations"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-12155bb594234a49ac8a37956b367baf", contentid:"id-df71659b7bb1464d8eacb9dba4312826", contenttype:"FlowRelationship"});
+										dataRelationships.push({id:"id-df71659b7bb1464d8eacb9dba4312826", type:"FlowRelationship", specialization:decodeURL(""), name:decodeURL("Gebeurtenisgegevrens"), documentation:decodeURL("Gegevens+over+een+plaatsgevonden+gebeurtenis+met+als+doel+het+daarover+notificeren+van+afnemers"), sourceid:"id-378b50d762cb47cd83297e08bbaf706c", targetid:"id-85e48f416e174734a42c4c7355e4c969"});
+									dataFoldersContent.push({folderid:"id-12155bb594234a49ac8a37956b367baf", contentid:"id-352bdf9aa2234737abeab0d333a40598", contenttype:"FlowRelationship"});
+										dataRelationships.push({id:"id-352bdf9aa2234737abeab0d333a40598", type:"FlowRelationship", specialization:decodeURL(""), name:decodeURL("Notificatie"), documentation:decodeURL("Gegevens+over+een+plaatsgevonden+gebeurtenis"), sourceid:"id-85e48f416e174734a42c4c7355e4c969", targetid:"id-d009aef82f564e8488a457f5f3720b3a"});
+									dataFoldersContent.push({folderid:"id-12155bb594234a49ac8a37956b367baf", contentid:"id-f9fccb4ad5b748b785b8a4f7badff7aa", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-f9fccb4ad5b748b785b8a4f7badff7aa", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-0b2dbe72fbf54998a0544dd3114bc9c8", targetid:"id-5750619b4b444fad8df447a720ce5f08"});
+									dataFoldersContent.push({folderid:"id-12155bb594234a49ac8a37956b367baf", contentid:"id-85e4e32e09f842f1968ff4d7cf95b0cc", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-85e4e32e09f842f1968ff4d7cf95b0cc", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-190e570b02964b47a48eb5e2b09678b4", targetid:"id-5750619b4b444fad8df447a720ce5f08"});
+									dataFoldersContent.push({folderid:"id-12155bb594234a49ac8a37956b367baf", contentid:"id-e27ed98ab2e2494b89e0d11acf942004", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-e27ed98ab2e2494b89e0d11acf942004", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-44bfdf7369c643aaad58cf9aa2b8760c", targetid:"id-5750619b4b444fad8df447a720ce5f08"});
+									dataFoldersContent.push({folderid:"id-12155bb594234a49ac8a37956b367baf", contentid:"id-385e63de83c94f25be03fd3d53ea1921", contenttype:"RealizationRelationship"});
+										dataRelationships.push({id:"id-385e63de83c94f25be03fd3d53ea1921", type:"RealizationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-5888157b68da4078b6e010038ea6e6dc", targetid:"id-5750619b4b444fad8df447a720ce5f08"});
+									dataFoldersContent.push({folderid:"id-12155bb594234a49ac8a37956b367baf", contentid:"id-8491cb97c0b54c61b2e0be46550a1e3e", contenttype:"AccessRelationship"});
+										dataRelationships.push({id:"id-8491cb97c0b54c61b2e0be46550a1e3e", type:"AccessRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-85e48f416e174734a42c4c7355e4c969", targetid:"id-5888157b68da4078b6e010038ea6e6dc"});
+									dataFoldersContent.push({folderid:"id-12155bb594234a49ac8a37956b367baf", contentid:"id-558816d26ddb4334b8766bee42edebbd", contenttype:"AssignmentRelationship"});
+										dataRelationships.push({id:"id-558816d26ddb4334b8766bee42edebbd", type:"AssignmentRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-32e99acdc85d43778bc24e03de6b9e33", targetid:"id-44bfdf7369c643aaad58cf9aa2b8760c"});
+									dataFoldersContent.push({folderid:"id-12155bb594234a49ac8a37956b367baf", contentid:"id-abc1a27a4e8d49a1981256baa3e46bde", contenttype:"AssignmentRelationship"});
+										dataRelationships.push({id:"id-abc1a27a4e8d49a1981256baa3e46bde", type:"AssignmentRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-32e99acdc85d43778bc24e03de6b9e33", targetid:"id-190e570b02964b47a48eb5e2b09678b4"});
+									dataFoldersContent.push({folderid:"id-12155bb594234a49ac8a37956b367baf", contentid:"id-87431c71285a49e4a6ef44c272bec495", contenttype:"AggregationRelationship"});
+										dataRelationships.push({id:"id-87431c71285a49e4a6ef44c272bec495", type:"AggregationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-f7df9c7b6f9d4c1e8a828afe1448a498", targetid:"id-378b50d762cb47cd83297e08bbaf706c"});
+									dataFoldersContent.push({folderid:"id-12155bb594234a49ac8a37956b367baf", contentid:"id-e286033bdb9d4a30946bf3899c3cb62d", contenttype:"AggregationRelationship"});
+										dataRelationships.push({id:"id-e286033bdb9d4a30946bf3899c3cb62d", type:"AggregationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-f7df9c7b6f9d4c1e8a828afe1448a498", targetid:"id-85e48f416e174734a42c4c7355e4c969"});
+									dataFoldersContent.push({folderid:"id-12155bb594234a49ac8a37956b367baf", contentid:"id-52929fa2012f4309ac87295e6b25b8b1", contenttype:"AccessRelationship"});
+										dataRelationships.push({id:"id-52929fa2012f4309ac87295e6b25b8b1", type:"AccessRelationship", specialization:decodeURL(""), name:decodeURL("Abonnement+gegevens"), documentation:decodeURL("Geautomatiseerd+bijwerken+van+abonnementgegevens+ten+behoeve+van+naar+wens+notificeren"), sourceid:"id-d009aef82f564e8488a457f5f3720b3a", targetid:"id-5888157b68da4078b6e010038ea6e6dc"});
+									dataFoldersContent.push({folderid:"id-12155bb594234a49ac8a37956b367baf", contentid:"id-d762c6aa83234909a60e6f42bbba296f", contenttype:"AccessRelationship"});
+										dataRelationships.push({id:"id-d762c6aa83234909a60e6f42bbba296f", type:"AccessRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-190e570b02964b47a48eb5e2b09678b4", targetid:"id-5888157b68da4078b6e010038ea6e6dc"});
+									dataFoldersContent.push({folderid:"id-12155bb594234a49ac8a37956b367baf", contentid:"id-79bd7b01888d4f0e8a0d155632f92364", contenttype:"AccessRelationship"});
+										dataRelationships.push({id:"id-79bd7b01888d4f0e8a0d155632f92364", type:"AccessRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-44bfdf7369c643aaad58cf9aa2b8760c", targetid:"id-5888157b68da4078b6e010038ea6e6dc"});
+									dataFoldersContent.push({folderid:"id-12155bb594234a49ac8a37956b367baf", contentid:"id-023365d5642440a89b05b4f538c5987c", contenttype:"AccessRelationship"});
+										dataRelationships.push({id:"id-023365d5642440a89b05b4f538c5987c", type:"AccessRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-0b2dbe72fbf54998a0544dd3114bc9c8", targetid:"id-5888157b68da4078b6e010038ea6e6dc"});
+
+								dataFoldersContent.push({folderid:"id-45568690bf3444b482e57f8b2da36e0d", contentid:"id-ab24c7222236485e81f0ce4b38598c2d", contenttype:"Folder"});
+								dataFolders.push({id:"id-ab24c7222236485e81f0ce4b38598c2d", type:"Folder", name:decodeURL("Views"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-ab24c7222236485e81f0ce4b38598c2d", contentid:"id-03465dcaf88249e7adce352036b27c66", contenttype:"ArchimateDiagramModel"});
+										dataViews.push({id:"id-03465dcaf88249e7adce352036b27c66", type:"ArchimateDiagramModel", name:decodeURL("Default+View"), documentation:decodeURL("")});
+												dataViewsContent.push({viewid:"id-03465dcaf88249e7adce352036b27c66", contentid:"id-44bfdf7369c643aaad58cf9aa2b8760c", contenttype:"BusinessRole"});
+												dataViewsContent.push({viewid:"id-03465dcaf88249e7adce352036b27c66", contentid:"id-190e570b02964b47a48eb5e2b09678b4", contenttype:"BusinessRole"});
+												dataViewsContent.push({viewid:"id-03465dcaf88249e7adce352036b27c66", contentid:"id-0b2dbe72fbf54998a0544dd3114bc9c8", contenttype:"BusinessRole"});
+												dataViewsContent.push({viewid:"id-03465dcaf88249e7adce352036b27c66", contentid:"id-5750619b4b444fad8df447a720ce5f08", contenttype:"Contract"});
+												dataViewsContent.push({viewid:"id-03465dcaf88249e7adce352036b27c66", contentid:"id-d009aef82f564e8488a457f5f3720b3a", contenttype:"ApplicationComponent"});
+												dataViewsContent.push({viewid:"id-03465dcaf88249e7adce352036b27c66", contentid:"id-5888157b68da4078b6e010038ea6e6dc", contenttype:"DataObject"});
+												dataViewsContent.push({viewid:"id-03465dcaf88249e7adce352036b27c66", contentid:"id-32e99acdc85d43778bc24e03de6b9e33", contenttype:"BusinessActor"});
+												dataViewsContent.push({viewid:"id-03465dcaf88249e7adce352036b27c66", contentid:"id-32e99acdc85d43778bc24e03de6b9e33", contenttype:"BusinessActor"});
+												dataViewsContent.push({viewid:"id-03465dcaf88249e7adce352036b27c66", contentid:"id-f7df9c7b6f9d4c1e8a828afe1448a498", contenttype:"ApplicationCollaboration"});
+														dataViewsContent.push({viewid:"id-03465dcaf88249e7adce352036b27c66", contentid:"id-378b50d762cb47cd83297e08bbaf706c", contenttype:"ApplicationComponent"});
+														dataViewsContent.push({viewid:"id-03465dcaf88249e7adce352036b27c66", contentid:"id-85e48f416e174734a42c4c7355e4c969", contenttype:"ApplicationComponent"});
+												
+
+																		dataViewsContent.push({viewid:"id-03465dcaf88249e7adce352036b27c66", contentid:"id-e27ed98ab2e2494b89e0d11acf942004", contenttype:"AssociationRelationship"});
+																		dataViewsContent.push({viewid:"id-03465dcaf88249e7adce352036b27c66", contentid:"id-79bd7b01888d4f0e8a0d155632f92364", contenttype:"AccessRelationship"});
+
+																		dataViewsContent.push({viewid:"id-03465dcaf88249e7adce352036b27c66", contentid:"id-85e4e32e09f842f1968ff4d7cf95b0cc", contenttype:"AssociationRelationship"});
+																		dataViewsContent.push({viewid:"id-03465dcaf88249e7adce352036b27c66", contentid:"id-d762c6aa83234909a60e6f42bbba296f", contenttype:"AccessRelationship"});
+
+																		dataViewsContent.push({viewid:"id-03465dcaf88249e7adce352036b27c66", contentid:"id-f9fccb4ad5b748b785b8a4f7badff7aa", contenttype:"AssociationRelationship"});
+																		dataViewsContent.push({viewid:"id-03465dcaf88249e7adce352036b27c66", contentid:"id-023365d5642440a89b05b4f538c5987c", contenttype:"AccessRelationship"});
+
+																		dataViewsContent.push({viewid:"id-03465dcaf88249e7adce352036b27c66", contentid:"id-52929fa2012f4309ac87295e6b25b8b1", contenttype:"AccessRelationship"});
+
+																		dataViewsContent.push({viewid:"id-03465dcaf88249e7adce352036b27c66", contentid:"id-385e63de83c94f25be03fd3d53ea1921", contenttype:"RealizationRelationship"});
+
+																		dataViewsContent.push({viewid:"id-03465dcaf88249e7adce352036b27c66", contentid:"id-558816d26ddb4334b8766bee42edebbd", contenttype:"AssignmentRelationship"});
+
+																		dataViewsContent.push({viewid:"id-03465dcaf88249e7adce352036b27c66", contentid:"id-abc1a27a4e8d49a1981256baa3e46bde", contenttype:"AssignmentRelationship"});
+
+																		dataViewsContent.push({viewid:"id-03465dcaf88249e7adce352036b27c66", contentid:"id-87431c71285a49e4a6ef44c272bec495", contenttype:"AggregationRelationship"});
+																		dataViewsContent.push({viewid:"id-03465dcaf88249e7adce352036b27c66", contentid:"id-e286033bdb9d4a30946bf3899c3cb62d", contenttype:"AggregationRelationship"});
+
+																				dataViewsContent.push({viewid:"id-03465dcaf88249e7adce352036b27c66", contentid:"id-df71659b7bb1464d8eacb9dba4312826", contenttype:"FlowRelationship"});
+
+																				dataViewsContent.push({viewid:"id-03465dcaf88249e7adce352036b27c66", contentid:"id-352bdf9aa2234737abeab0d333a40598", contenttype:"FlowRelationship"});
+																				dataViewsContent.push({viewid:"id-03465dcaf88249e7adce352036b27c66", contentid:"id-8491cb97c0b54c61b2e0be46550a1e3e", contenttype:"AccessRelationship"});
+
+												
+
+
+
+
+
+						    alasql('CREATE TABLE Elements');
+						    alasql('CREATE TABLE Properties');
+						    alasql('CREATE TABLE Relationships');
+						    alasql('CREATE TABLE Views');
+						    alasql('CREATE TABLE ViewsContent');
+						    alasql('CREATE TABLE Folders');
+						    alasql('CREATE TABLE FoldersContent');
+
+						    alasql.tables.Elements.data = dataElements;
+						    alasql.tables.Properties.data = dataProperties;
+						    alasql.tables.Relationships.data = dataRelationships;
+						    alasql.tables.Views.data = dataViews;
+						    alasql.tables.ViewsContent.data = dataViewsContent;
+						    alasql.tables.Folders.data = dataFolders;
+						    alasql.tables.FoldersContent.data = dataFoldersContent;
+						</script> 
+						</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
