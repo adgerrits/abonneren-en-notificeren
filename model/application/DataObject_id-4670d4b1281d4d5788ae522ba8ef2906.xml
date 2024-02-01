@@ -1,0 +1,5 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Binary Mode Message"
+    id="id-4670d4b1281d4d5788ae522ba8ef2906"
+    documentation="A &quot;binary-mode message&quot; is one where the event data is stored in the message body, and event attributes are stored as part of message meta-data."/>

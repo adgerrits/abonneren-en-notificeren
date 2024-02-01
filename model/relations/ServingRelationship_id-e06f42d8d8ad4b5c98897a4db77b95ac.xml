@@ -1,11 +1,13 @@
-<archimate:FlowRelationship
+<archimate:ServingRelationship
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:archimate="http://www.archimatetool.com/archimate"
-    id="id-df71659b7bb1464d8eacb9dba4312826">
+    name="Publiceert gebeurtenisinfo"
+    id="id-e06f42d8d8ad4b5c98897a4db77b95ac"
+    documentation="Een producer publiceert gegevens over een plaatsgevonden gebeurtenis op basis waarvan een intermediairy geabonneerde consumers kan notificeren.">
   <source
       xsi:type="archimate:ApplicationComponent"
       href="ApplicationComponent_id-378b50d762cb47cd83297e08bbaf706c.xml#id-378b50d762cb47cd83297e08bbaf706c"/>
   <target
       xsi:type="archimate:ApplicationComponent"
       href="ApplicationComponent_id-85e48f416e174734a42c4c7355e4c969.xml#id-85e48f416e174734a42c4c7355e4c969"/>
-</archimate:FlowRelationship>
+</archimate:ServingRelationship>

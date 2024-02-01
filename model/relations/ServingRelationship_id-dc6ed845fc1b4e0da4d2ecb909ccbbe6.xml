@@ -1,11 +1,13 @@
-<archimate:FlowRelationship
+<archimate:ServingRelationship
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:archimate="http://www.archimatetool.com/archimate"
-    id="id-352bdf9aa2234737abeab0d333a40598">
+    name="Notificeert"
+    id="id-dc6ed845fc1b4e0da4d2ecb909ccbbe6"
+    documentation="Een intermediairy notificeert geabonneerde afnemers op basis van gepubliceerde informatie over plaatsgevonden gebeurtenissen en per consumer aanwezige abonnementsgegevevens">
   <source
       xsi:type="archimate:ApplicationComponent"
       href="ApplicationComponent_id-85e48f416e174734a42c4c7355e4c969.xml#id-85e48f416e174734a42c4c7355e4c969"/>
   <target
       xsi:type="archimate:ApplicationComponent"
       href="ApplicationComponent_id-d009aef82f564e8488a457f5f3720b3a.xml#id-d009aef82f564e8488a457f5f3720b3a"/>
-</archimate:FlowRelationship>
+</archimate:ServingRelationship>

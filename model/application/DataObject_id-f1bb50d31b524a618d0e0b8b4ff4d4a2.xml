@@ -1,0 +1,5 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Source"
+    id="id-f1bb50d31b524a618d0e0b8b4ff4d4a2"
+    documentation="The &quot;source&quot; is the context in which the occurrence happened. In a distributed system it might consist of multiple Producers. If a source is not aware of CloudEvents, an external producer creates the CloudEvent on behalf of the source."/>

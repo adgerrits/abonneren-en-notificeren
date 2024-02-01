@@ -1,0 +1,5 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Message"
+    id="id-e9be4082d1e94edda462bbd2b015da8f"
+    documentation="Events are transported from a source to a destination via messages."/>

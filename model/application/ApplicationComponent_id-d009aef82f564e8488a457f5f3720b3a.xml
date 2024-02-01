@@ -1,5 +1,5 @@
 <archimate:ApplicationComponent
     xmlns:archimate="http://www.archimatetool.com/archimate"
-    name="Afnemer applicatie"
+    name="(Event) Consumer"
     id="id-d009aef82f564e8488a457f5f3720b3a"
-    documentation="Applicatie die notificaties ontvangt over plaatsgevonden gebeurtenissen"/>
+    documentation="A &quot;consumer&quot; receives the event and acts upon it. It uses the context and data to execute some logic, which might lead to the occurrence of new events."/>

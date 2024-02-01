@@ -1,0 +1,5 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Sturctured Mode Message"
+    id="id-6eb9e5d3d6604622beb8c2eea3799e58"
+    documentation="A &quot;structured-mode message&quot; is one where the event is fully encoded using a stand-alone event format and stored in the message body."/>

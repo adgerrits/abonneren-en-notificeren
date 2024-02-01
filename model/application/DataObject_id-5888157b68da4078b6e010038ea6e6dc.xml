@@ -1,5 +1,5 @@
 <archimate:DataObject
     xmlns:archimate="http://www.archimatetool.com/archimate"
-    name="Abonnement"
+    name="Subscription"
     id="id-5888157b68da4078b6e010038ea6e6dc"
-    documentation="Regisrtratie met abonnementsgegevens per afnemende organisatie.&#xD;&#xA;De registratie kan handmatig en/of geautomatiseerd worden bijgewerkt.&#xD;&#xA;De intermediair-applicatie gebruikt de registratie om te bepalen welke notificaties moeten worden verstrekt aan een afnemer."/>
+    documentation="Regisrtratie met abonnementsgegevens per consumer..&#xD;&#xA;De registratie kan handmatig en/of geautomatiseerd worden onderhouden.&#xD;&#xA;Subscription gegevens worden gebruikt bij het (al dan niet) notificeren van afnemers. "/>
