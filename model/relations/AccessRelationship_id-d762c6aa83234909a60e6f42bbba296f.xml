@@ -1,6 +1,7 @@
 <archimate:AccessRelationship
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Subcription data"
     id="id-d762c6aa83234909a60e6f42bbba296f">
   <source
       xsi:type="archimate:BusinessRole"

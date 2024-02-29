@@ -31,10 +31,10 @@
           href="AccessRelationship_id-d762c6aa83234909a60e6f42bbba296f.xml#id-d762c6aa83234909a60e6f42bbba296f"/>
     </sourceConnections>
     <bounds
-        x="533"
-        y="144"
-        width="120"
-        height="55"/>
+        x="520"
+        y="176"
+        width="129"
+        height="81"/>
     <archimateElement
         xsi:type="archimate:BusinessRole"
         href="BusinessRole_id-190e570b02964b47a48eb5e2b09678b4.xml#id-190e570b02964b47a48eb5e2b09678b4"/>
@@ -50,17 +50,17 @@
         x="48"
         y="24"
         width="339"
-        height="35"/>
+        height="25"/>
   </children>
   <children
       xsi:type="archimate:DiagramModelArchimateObject"
       id="id-c1cb1e25b9714256a6f47fb2f4240918"
       targetConnections="id-12cddf92a39241b5991ec08499de15ad id-f328587eaba440a4b2901f8328049e04 id-ab79e6fd8ae1444e81859e4fa47519f9 id-53e971176c7e45d687ac27124b172ade">
     <bounds
-        x="372"
-        y="240"
-        width="120"
-        height="55"/>
+        x="360"
+        y="272"
+        width="129"
+        height="81"/>
     <archimateElement
         xsi:type="archimate:Contract"
         href="Contract_id-5750619b4b444fad8df447a720ce5f08.xml#id-5750619b4b444fad8df447a720ce5f08"/>
@@ -79,10 +79,10 @@
           href="RealizationRelationship_id-385e63de83c94f25be03fd3d53ea1921.xml#id-385e63de83c94f25be03fd3d53ea1921"/>
     </sourceConnections>
     <bounds
-        x="372"
-        y="369"
-        width="120"
-        height="55"/>
+        x="360"
+        y="384"
+        width="129"
+        height="81"/>
     <archimateElement
         xsi:type="archimate:DataObject"
         href="DataObject_id-5888157b68da4078b6e010038ea6e6dc.xml#id-5888157b68da4078b6e010038ea6e6dc"/>
@@ -100,10 +100,10 @@
           href="AssignmentRelationship_id-abc1a27a4e8d49a1981256baa3e46bde.xml#id-abc1a27a4e8d49a1981256baa3e46bde"/>
     </sourceConnections>
     <bounds
-        x="701"
-        y="144"
-        width="120"
-        height="55"/>
+        x="680"
+        y="176"
+        width="129"
+        height="81"/>
     <archimateElement
         xsi:type="archimate:BusinessActor"
         href="BusinessActor_id-32e99acdc85d43778bc24e03de6b9e33.xml#id-32e99acdc85d43778bc24e03de6b9e33"/>
@@ -121,10 +121,10 @@
           href="AssignmentRelationship_id-558816d26ddb4334b8766bee42edebbd.xml#id-558816d26ddb4334b8766bee42edebbd"/>
     </sourceConnections>
     <bounds
-        x="44"
-        y="144"
-        width="120"
-        height="55"/>
+        x="40"
+        y="176"
+        width="129"
+        height="81"/>
     <archimateElement
         xsi:type="archimate:BusinessActor"
         href="BusinessActor_id-32e99acdc85d43778bc24e03de6b9e33.xml#id-32e99acdc85d43778bc24e03de6b9e33"/>
@@ -157,10 +157,10 @@
           href="AssociationRelationship_id-e27ed98ab2e2494b89e0d11acf942004.xml#id-e27ed98ab2e2494b89e0d11acf942004"/>
     </sourceConnections>
     <bounds
-        x="201"
-        y="144"
-        width="120"
-        height="55"/>
+        x="200"
+        y="176"
+        width="129"
+        height="81"/>
     <archimateElement
         xsi:type="archimate:BusinessRole"
         href="BusinessRole_id-44bfdf7369c643aaad58cf9aa2b8760c.xml#id-44bfdf7369c643aaad58cf9aa2b8760c"/>
@@ -198,10 +198,10 @@
           href="AssociationRelationship_id-f9fccb4ad5b748b785b8a4f7badff7aa.xml#id-f9fccb4ad5b748b785b8a4f7badff7aa"/>
     </sourceConnections>
     <bounds
-        x="372"
-        y="144"
-        width="120"
-        height="55"/>
+        x="360"
+        y="176"
+        width="129"
+        height="81"/>
     <archimateElement
         xsi:type="archimate:BusinessRole"
         href="BusinessRole_id-0b2dbe72fbf54998a0544dd3114bc9c8.xml#id-0b2dbe72fbf54998a0544dd3114bc9c8"/>
@@ -219,34 +219,23 @@
           href="AssignmentRelationship_id-cff736c7fe1c4a5fa2651b0e6fe481e4.xml#id-cff736c7fe1c4a5fa2651b0e6fe481e4"/>
     </sourceConnections>
     <bounds
-        x="372"
-        y="60"
-        width="120"
-        height="55"/>
+        x="360"
+        y="64"
+        width="129"
+        height="81"/>
     <archimateElement
         xsi:type="archimate:BusinessActor"
         href="BusinessActor_id-32e99acdc85d43778bc24e03de6b9e33.xml#id-32e99acdc85d43778bc24e03de6b9e33"/>
   </children>
   <children
       xsi:type="archimate:DiagramModelNote"
-      id="id-a189f37260624353993a2bcd9e530386"
-      textAlignment="1"
-      content="Abonnementgegevens kunnen zowel door personen als door applicaties worden onderhouden.">
-    <bounds
-        x="628"
-        y="360"
-        width="193"
-        height="64"/>
-  </children>
-  <children
-      xsi:type="archimate:DiagramModelNote"
       id="id-69649fb677d14e12a31c710be27fcfa9"
       textAlignment="1"
-      content="De rol van aanbieder en/of intermediair en/of afnemer dan door verschillende of dezelfde organisatie(s) worden ingevuld.">
+      content="Toelichting: &#xD;&#xA;* De rol van aanbieder en/of intermediair en/of afnemer kan door verschillende of dezelfde organisatie(s) worden ingevuld.&#xD;&#xA;* Subscriptiondata kunnen zowel door personen als applicaties worden bijgewerkt.">
     <bounds
-        x="48"
-        y="57"
-        width="229"
-        height="62"/>
+        x="40"
+        y="488"
+        width="777"
+        height="80"/>
   </children>
 </archimate:ArchimateDiagramModel>

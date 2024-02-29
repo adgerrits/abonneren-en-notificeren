@@ -1,7 +1,7 @@
 <archimate:AccessRelationship
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:archimate="http://www.archimatetool.com/archimate"
-    name="Abonnement gegevens"
+    name="Subscription data"
     id="id-52929fa2012f4309ac87295e6b25b8b1"
     documentation="Geautomatiseerd bijwerken van abonnementgegevens ten behoeve van naar wens notificeren">
   <source

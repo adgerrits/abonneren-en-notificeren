@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title></title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b class="i18n-elementtype-DiagramModelNote"></b>
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-DiagramModelNote"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-DiagramModelNote" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+                       <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-content"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Definities:
+Notificeren - Het door een aanbieder aan afnemers verstrekken van informatie over binnen zijn domein plaatsgevonden gebeurtenissen
+Notificatie - De door een aanbieder aan afnemers verstrekte informatie een binnen zijn domein plaatsgevonden gebeurtenis
+
+
+Typering van events: 
+Signaal event = Signaal dat er iets is gebeurd - Sensor die een signaal geeft na een plaatsgevonden gebeurtenis
+Gegevensmutatie event = Oude en nieuwe gegevens na een verandering - Oude en nieuwe adres.
+Gegevensmutatie + Aanleiding event = Oude en nieuwe gegevens na een verandering + het type plaatsgevonden gebeurtenis - Oude en nieuwe adres = Verhuizing
+Informatierijk event  = Gebeurtenisdata met inhoudelijke gegevens - Verhuizing van gezin met alle data i.p.v. van aparte berichten per gezinslid.
+Informatiearm event = Gebeurtenisdata zonder inhoudelijke gegevens (evt. apart op te halen). - Verhuizing met in bericht alleen identificerende gegevens.
+
+Te maken handreikingen:
+- handreiking voor welk type event wanneer geschikt is
+- handreiking voor ieder type event (met eisen, wensen en aandachtspunten)
+- handreiking over transitie van IST naar SOLL
+
+- Gebeurtenisgericht gaan werken (vanuit een gegevensgericht informatielandschap)
+- Definieren van gebeurtenistypes voor gebruik binnen events (op te nemen in NL GOV Profile)
+- Naamgeving van bronnen voor gebruik binnen events (op te nemen in NL GOV Profile)
+
+- Aandachtspunten bij inrichten van bronregistraties in relatie tot notificeren
+
+</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

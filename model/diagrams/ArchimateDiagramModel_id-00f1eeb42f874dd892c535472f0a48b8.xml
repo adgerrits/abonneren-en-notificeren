@@ -1,0 +1,30 @@
+<archimate:ArchimateDiagramModel
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="50-Voorstellen "
+    id="id-00f1eeb42f874dd892c535472f0a48b8">
+  <children
+      xsi:type="archimate:DiagramModelNote"
+      id="id-930937a91ba94f43bdc58cd3b4b7e1dd"
+      font="1|Segoe UI|9.0|1|WINDOWS|1|-12|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI"
+      textAlignment="1"
+      content="Abonneren en notificeren - Voorstellen"
+      borderType="2">
+    <bounds
+        x="24"
+        y="24"
+        width="339"
+        height="35"/>
+  </children>
+  <children
+      xsi:type="archimate:DiagramModelNote"
+      id="id-513b984c89824048a322a3fcfb7d03f6"
+      textAlignment="1"
+      content="Definities:&#xD;&#xA;Notificeren - Het door een aanbieder aan afnemers verstrekken van informatie over binnen zijn domein plaatsgevonden gebeurtenissen&#xD;&#xA;Notificatie - De door een aanbieder aan afnemers verstrekte informatie een binnen zijn domein plaatsgevonden gebeurtenis&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Typering van events: &#xD;&#xA;Signaal event = Signaal dat er iets is gebeurd - Sensor die een signaal geeft na een plaatsgevonden gebeurtenis&#xD;&#xA;Gegevensmutatie event = Oude en nieuwe gegevens na een verandering - Oude en nieuwe adres.&#xD;&#xA;Gegevensmutatie + Aanleiding event = Oude en nieuwe gegevens na een verandering + het type plaatsgevonden gebeurtenis - Oude en nieuwe adres = Verhuizing&#xD;&#xA;Informatierijk event  = Gebeurtenisdata met inhoudelijke gegevens - Verhuizing van gezin met alle data i.p.v. van aparte berichten per gezinslid.&#xD;&#xA;Informatiearm event = Gebeurtenisdata zonder inhoudelijke gegevens (evt. apart op te halen). - Verhuizing met in bericht alleen identificerende gegevens.&#xD;&#xA;&#xD;&#xA;Te maken handreikingen:&#xD;&#xA;- handreiking voor welk type event wanneer geschikt is&#xD;&#xA;- handreiking voor ieder type event (met eisen, wensen en aandachtspunten)&#xD;&#xA;- handreiking over transitie van IST naar SOLL&#xD;&#xA;&#xD;&#xA;- Gebeurtenisgericht gaan werken (vanuit een gegevensgericht informatielandschap)&#xD;&#xA;- Definieren van gebeurtenistypes voor gebruik binnen events (op te nemen in NL GOV Profile)&#xD;&#xA;- Naamgeving van bronnen voor gebruik binnen events (op te nemen in NL GOV Profile)&#xD;&#xA;&#xD;&#xA;- Aandachtspunten bij inrichten van bronregistraties in relatie tot notificeren&#xD;&#xA;&#xD;&#xA;">
+    <bounds
+        x="24"
+        y="80"
+        width="889"
+        height="393"/>
+  </children>
+</archimate:ArchimateDiagramModel>
