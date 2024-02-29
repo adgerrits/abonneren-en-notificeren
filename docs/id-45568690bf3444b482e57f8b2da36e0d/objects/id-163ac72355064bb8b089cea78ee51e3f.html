@@ -44,7 +44,14 @@
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="documentation">
-						<div class="convertlinks documentation" style="white-space:pre-wrap">Producer en/of Intermediairy en/of Consumer kan verschillende of dezelfde applicatie(s) betreffen</div>
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Toelichting:
+* Subscription-data kunnen handmatig en/of geautomatiseerd worden bijgewerkt
+* Een samengestelde applicatie kan 2 (en theoretisch 3) van de 3 applicatiecomponenten combineren
+* De Intermediairy notificeert per van een Producer ontvangen Event 0, 1 of meer Consumers
+* De Intermediairy kan hetzelfde of verschillende Events aan verschillende Consumers verstrekken
+* Bij 'Notificeren' en 'Verstrekken van Events' wordt in het midden gelaten wie het initiatief neemt / of het 'push- of pull-achtig' gebeurt.
+* De Intermediairy bepaalt hoe hij met Subcriptions omgaat (bijv. of er relaties tussen kunnen zijn).
+* Voor realisatie is het Publish-Subscribe patroon het meest gebruikelijk (te definieren)</div>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="properties">
 						<table class="table table-striped table-hover table-condensed">
